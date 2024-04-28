@@ -1,5 +1,3 @@
-<b></b>
-
 ## UNIX
 
 The UNIX operating system is a collection of programs, each with special role:
@@ -79,3 +77,23 @@ We should be able to combine these single purpose programs to build bigger progr
 
 - '.' or '..' or '~': Paths that start with '.' or '..' or '~' are relative paths.
 - '/': Paths that start with '/' are absolute paths.
+
+
+#### Exit codes
+
+```$?``` checks the 'exit code'.
+- If program runs successfully, 'exit code' will be 0. Else - non-zero.
+- We can use 'exit codes' to chain commands depending on whether something was successful or not. E.g. if we only want to do subsequent commands if the first one was successful or not. To do so, we need to use ```&&```.
+
+
+#### Screen
+
+- ``` ```
+- ```screen -list ```: list screens that we are running.
+- ```screen -x <screen name> ``` attach to a screen session that is already running (```-x``` arrach to an existing session).
+- 'CTRL + A' + D - log out from a screen session (detach from the screen). Click on 'CTRL + A', take hand off and then 'D'.
+- ```screen -S <name> ```: give a name to a screen.
+- 'CTRL + A + C' create a new window.
+- 'CTRL + A + N' switch to the next window.
+- 'CTRL + A + P' switch to the previous window.
+- 'CTRL + D' or ```exit```: exit from a window.
